@@ -1,121 +1,100 @@
-/* Reset de base */
+/* Reset basique */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-  background-color: #F5F5F5;
-  color: #333333;
-  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
 }
 
-/* Header */
 header {
-  background: linear-gradient(90deg, #6C63FF, #FF6584);
+  background: #1e1e2f;
   color: white;
-  padding: 20px;
   text-align: center;
+  padding: 20px 0;
 }
 
-header h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 1.2em;
-  margin-bottom: 15px;
-}
-
-nav a {
+header nav a {
   color: white;
-  margin: 0 15px;
+  margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
 }
 
-nav a:hover {
-  color: #FFD700; /* Doré au survol */
+header nav a:hover {
+  color: #4a90e2;
 }
 
-/* Hero section */
 .hero {
   text-align: center;
-  padding: 60px 20px;
-  background-color: #ffffff;
-  margin: 20px auto;
-  border-radius: 10px;
-  max-width: 900px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 50px 20px;
+  background: #4a90e2;
+  color: white;
 }
 
-.hero h2 {
-  font-size: 2em;
-  margin-bottom: 15px;
-  color: #6C63FF;
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: #ff6f61;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
 }
 
-.hero p {
-  font-size: 1.1em;
-  color: #555555;
+.btn:hover {
+  background: #e55b50;
 }
 
-/* Section Projets */
-.projects {
+.skills, .projects, .contact {
   max-width: 1000px;
   margin: 40px auto;
   padding: 0 20px;
 }
 
-.project-card {
-  background-color: #ffffff;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.project-card h3 {
-  color: #6C63FF;
-  margin-bottom: 10px;
-}
-
-.project-card p {
-  margin-bottom: 15px;
-  color: #555555;
-}
-
-.project-card .btn {
+.skill-icons span {
   display: inline-block;
-  padding: 10px 15px;
-  background-color: #FF6584;
+  background: #4a90e2;
   color: white;
-  text-decoration: none;
+  padding: 10px 15px;
+  margin: 5px;
   border-radius: 6px;
-  transition: background 0.3s;
+  font-weight: bold;
 }
 
-.project-card .btn:hover {
-  background-color: #6C63FF;
-}
-
-/* Section Contact */
-.contact {
-  max-width: 600px;
-  margin: 40px auto;
+.projects .card {
+  background: white;
   padding: 20px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.projects .card a {
+  text-decoration: none;
+  color: #4a90e2;
+}
+
+.projects .card a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #1e1e2f;
+  color: white;
   text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
 }
 
-.contact p {
-  margin-bottom: 10px;
+/* Responsive */
+@media (max-width: 768px) {
+  .skill-icons span {
+    display: block;
+    margin-bottom: 10px;
+  }
 }
-
-/* Footer*
