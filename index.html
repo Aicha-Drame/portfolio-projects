@@ -3,63 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <title>Aïcha Dramé | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- ===== MENU ===== -->
 <header>
-  <h1>Aïcha Dramé</h1>
-  <p>Développeuse Web & Data | Informatique</p>
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="projects.html">Projets</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="container">
+    <h1 class="logo">Aïcha Dramé</h1>
+
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="projects.html">Projets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Sélecteur de langue -->
+    <div class="lang">
+      <a href="index.html">FR</a> | 
+      <a href="index-en.html">EN</a>
+    </div>
+
+  </div>
 </header>
 
-<section class="hero">
-  <h2>Bienvenue sur mon portfolio</h2>
-  <p>Je suis diplômée en informatique et passionnée par le développement web et l'analyse de données.  
-     Je recherche des opportunités dans un environnement anglophone.</p>
-  <a href="CV_Aicha_Drame.pdf" target="_blank" class="btn">📄 Télécharger mon CV</a>
-</section>
 
-<section class="competences">
-  <h2>Compétences</h2>
-
-  <div class="skill">
-    <h3>Programmation</h3>
-    <p>C++, C#, PHP, HTML, CSS, R, Python</p>
-    <div class="bar">
-      <div class="progress" style="width:50%"></div>
-    </div>
-  </div>
-
-  <div class="skill">
-    <h3>Analyse de données</h3>
-    <p>SQL, Power BI, Google Analytics</p>
-    <div class="bar">
-      <div class="progress" style="width:50%"></div>
-    </div>
-  </div>
-
-  <div class="skill">
-    <h3>Outils bureautiques</h3>
-    <p>Excel, PowerPoint, Word</p>
-    <div class="bar">
-      <div class="progress" style="width:50%"></div>
-    </div>
-  </div>
-
-  <div class="skill">
-    <h3>Technologies Big Data</h3>
-    <p>Dataiku, MongoDB</p>
-    <div class="bar">
-      <div class="progress" style="width:50%"></div>
-    </div>
+<!-- ===== BANNIÈRE ===== -->
+<section class="banner">
+  <div class="container">
+    <h2>Développeuse & Data</h2>
+    <p>Passionnée par la création de solutions informatiques modernes</p>
+    <a class="btn" href="CV_Aicha_Drame.pdf" target="_blank">📄 Télécharger mon CV</a>
   </div>
 </section>
 
+<!-- ===== A PROPOS ===== -->
+<section class="about container">
+  <h2>À propos</h2>
+  <p>
+    Je suis développeuse et spécialisée dans les solutions data. 
+    Grâce à mes formations et expériences, j’ai acquis des compétences en développement d’applications,
+    gestion de bases de données et création de tableaux de bord décisionnels.
+  </p>
+</section>
+
+<!-- ===== COMPÉTENCES ===== -->
+<section class="skills">
+  <div class="container">
+    <h2>Compétences</h2>
+
+    <div class="skill">
+      <span>Programmation (C++, C#, PHP, HTML, CSS, Python, R)</span>
+      <div class="progress"><div style="width:50%"></div></div>
+    </div>
+
+    <div class="skill">
+      <span>Bases de données & SQL</span>
+      <div class="progress"><div style="width:50%"></div></div>
+    </div>
+
+    <div class="skill">
+      <span>Power BI & Tableaux de bord</span>
+      <div class="progress"><div style="width:50%"></div></div>
+    </div>
+
+    <div class="skill">
+      <span>Big Data (MongoDB, Dataiku)</span>
+      <div class="progress"><div style="width:50%"></div></div>
+    </div>
+
+    <div class="skill">
+      <span>Outils bureautiques (Excel, Word, PowerPoint)</span>
+      <div class="progress"><div style="width:50%"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OUTILS ===== -->
+<section class="tools container">
+  <h2>Outils / Logiciels</h2>
+  <p>Ajoute ici tes images d’outils (logos)</p>
+  <div class="tool-grid">
+    <img src="images/vscode.png" alt="VSCode">
+    <img src="images/github.png" alt="GitHub">
+    <img src="images/powerbi.png" alt="PowerBI">
+    <img src="images/mysql.png" alt="MySQL">
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
 <footer>
   <p>© 2026 - Aïcha Dramé</p>
 </footer>
