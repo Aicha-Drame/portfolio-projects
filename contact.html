@@ -1,45 +1,70 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Contact</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Contact | Aïcha Dramé</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Icônes Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-<nav class="top-nav">
-  <h1>Aïcha Dramé</h1>
-  <div>
-    <a href="index.html">Accueil</a>
-    <a href="projects.html">Projets</a>
-    <a href="contact.html">Contact</a>
+<!-- ===== MENU ===== -->
+<header class="top-nav">
+  <div class="container">
+    <h1 class="logo">Aïcha Dramé</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="projects.html">Projets</a>
+      <a href="contact.html">Contact</a>
+      <span class="lang">
+        <a href="contact.html">FR</a> | <a href="contact-en.html">EN</a>
+      </span>
+    </nav>
   </div>
-</nav>
-
-<header class="banner small">
-  <h2>Contact ✉️</h2>
 </header>
 
-<section class="section contact-box">
+<!-- ===== SECTION CONTACT ===== -->
+<section class="contact container">
+  <h2>Me contacter</h2>
 
-<p><b>Localisation :</b> France</p>
-<p><b>Email :</b> dramea388@email.com</p>
-<p><b>GitHub :</b> <a href="https://github.com/Aicha-Drame">github.com/Aicha-Drame</a></p>
+  <div class="contact-box">
 
-<h3>Envoyez-moi un message</h3>
+    <div class="contact-item">
+      <i class="fas fa-location-dot"></i>
+      <div>
+        <h3>Localisation</h3>
+        <p>56100 Lorient, France</p>
+      </div>
+    </div>
 
-<form>
-<input type="text" placeholder="Votre nom" required>
-<input type="email" placeholder="Votre email" required>
-<input type="text" placeholder="Sujet" required>
-<textarea placeholder="Votre message" required></textarea>
-<button class="btn">Envoyer</button>
-</form>
+    <div class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <div>
+        <h3>Email</h3>
+        <p>
+          <a href="mailto:aicha.drame@email.com">
+            aicha.drame@email.com
+          </a>
+        </p>
+      </div>
+    </div>
 
+    <div class="contact-item">
+      <i class="fas fa-phone"></i>
+      <div>
+        <h3>Téléphone</h3>
+        <p>07 51 61 33 11</p>
+      </div>
+    </div>
+
+  </div>
 </section>
 
+<!-- ===== FOOTER ===== -->
 <footer>
-© 2026 - Aïcha Dramé
+  © 2026 - Aïcha Dramé
 </footer>
 
 </body>
