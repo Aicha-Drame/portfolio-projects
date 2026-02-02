@@ -103,9 +103,21 @@ h2 {
   flex-wrap: wrap;
 }
 
-.tool-grid img {
-  width: 60px;
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
 }
+
+.tool-grid img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin: auto;
+  display: block;
+}
+
 
 /* ===== EXPERIENCE / EDUCATION ===== */
 .exp-card, .edu-card {
