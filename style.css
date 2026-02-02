@@ -1,3 +1,4 @@
+/* ===== BASE ===== */
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
@@ -9,7 +10,7 @@ body {
 .top-nav {
   background: white;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  padding: 10px 0;
+  padding: 12px 0;
 }
 
 .container {
@@ -18,13 +19,15 @@ body {
   margin: auto;
 }
 
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo {
   color: #7b5fff;
   margin: 0;
-}
-
-nav {
-  margin-top: 8px;
 }
 
 nav a {
@@ -48,21 +51,27 @@ nav a:hover {
   background: linear-gradient(90deg,#7b5fff,#ff5b8d);
   color: white;
   text-align: center;
-  padding: 60px 20px;
+  padding: 70px 20px;
 }
 
 .banner h2 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
 }
 
 .btn {
   background: white;
   color: #7b5fff;
-  padding: 10px 20px;
-  border-radius: 6px;
+  padding: 12px 22px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+  display: inline-block;
 }
 
 .btn:hover {
@@ -74,14 +83,23 @@ section {
   padding: 50px 0;
 }
 
-h2 {
-  color: #7b5fff;
-  margin-bottom: 20px;
+.block {
+  background: white;
+  padding: 45px;
+  margin: 40px auto;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  max-width: 1000px;
+}
+
+.title {
+  color: #ff5b8d;
+  margin-bottom: 15px;
 }
 
 /* ===== SKILLS ===== */
 .skill {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .bar {
@@ -92,134 +110,56 @@ h2 {
 }
 
 .progress {
-  background: linear-gradient(90deg,#7b5fff,#ff5b8d);
   height: 100%;
+  background: linear-gradient(90deg,#7b5fff,#ff5b8d);
 }
 
-/* ===== TOOLS ===== */
-.tool-grid {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
+/* ===== OUTILS / LOGICIELS ===== */
 .tool-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 30px;
   margin-top: 30px;
 }
 
-.tool-grid img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  margin: auto;
-  display: block;
-}
-
-
-/* ===== EXPERIENCE / EDUCATION ===== */
-.exp-card, .edu-card {
-  background: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-/* ===== FOOTER ===== */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #eee;
-  margin-top: 40px;
-}
-/* ===== CONTACT ===== */
-.contact-box {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
-  max-width: 600px;
-  margin: auto;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 25px;
-}
-
-.contact-item i {
-  font-size: 28px;
-  color: #7b5fff;
-  margin-right: 20px;
-  min-width: 30px;
-}
-
-.contact-item h3 {
-  margin: 0;
-  color: #333;
-}
-
-.contact-item a {
-  color: #ff5b8d;
-  text-decoration: none;
-}
-
-.contact-item a:hover {
-  text-decoration: underline;
-}
-
-.title {
-  color: #ff5b8d;
-  margin-bottom: 20px;
-}
-
-.block {
+.tool {
   background: #ffffff;
-  padding: 40px;
-  margin: 40px auto;
   border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-  max-width: 1000px;
-}
+  padding: 25px 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  height: 160px;
 
-.tool-grid {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.tool-grid img {
-  width: 60px;
-}
-
-.nav-flex {
-  display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-@media (max-width: 768px) {
-  .banner h2 {
-    font-size: 2rem;
-  }
-
-  .block {
-    padding: 25px;
-  }
-
-  .nav-flex {
-    flex-direction: column;
-    gap: 10px;
-  }
+.tool:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
 }
+
+.tool img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.tool span {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* ===== PROJECTS ===== */
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
+  gap: 30px;
   padding: 3rem;
   max-width: 1100px;
   margin: auto;
@@ -228,7 +168,7 @@ footer {
 .card {
   background: #ffffff;
   padding: 25px;
-  border-radius: 14px;
+  border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   display: flex;
   flex-direction: column;
@@ -251,22 +191,49 @@ footer {
 }
 
 .card .btn {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
-.tool-grid {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
+/* ===== EXPERIENCE / EDUCATION ===== */
+.exp-card, .edu-card {
+  background: white;
+  padding: 22px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.tool-grid img {
-  width: 70px;
-  height: auto;
-  transition: transform 0.2s ease;
+/* ===== CONTACT ===== */
+.contact-box {
+  background: white;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  max-width: 600px;
+  margin: auto;
 }
 
-.tool-grid img:hover {
-  transform: scale(1.1);
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .banner h2 {
+    font-size: 2rem;
+  }
+
+  .block {
+    padding: 30px;
+  }
+
+  .nav-flex {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
