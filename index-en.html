@@ -1,126 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Aïcha Dramé | Portfolio</title>
+  <title>Mes Projets</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- HEADER -->
+  <header class="top-nav">
+    <div class="container">
+      <div class="nav-flex">
+        <h1 class="logo">Aïcha Dramé</h1>
+        <nav>
+          <a href="index.html">Accueil</a>
+          <a href="projects.html">Projets</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-<header class="top-nav">
-  <div class="container nav-flex">
-    <h1 class="logo">Aïcha Dramé</h1>
-    <nav>
-      <a href="index-en.html">Home</a>
-      <a href="projects-en.html">Projects</a>
-      <a href="contact-en.html">Contact</a>
-      <span class="lang">
-        <a href="index.html">FR</a> | <a href="index-en.html">EN</a>
-      </span>
-    </nav>
-  </div>
-</header>
+  <!-- PROJETS -->
+  <section class="projects">
+    <div class="container">
+      <h2>Mes projets</h2>
+      
+      <!-- MARKETPLACE SÉNÉGAL (NOUVEAU) -->
+      <div class="project-card card">
+        <h3>🛒 Marketplace Sénégal</h3>
+        <p>Front-end e-commerce collaboratif. HTML/CSS/JS + Git workflow.</p>
+        <div class="btn-group">
+          <a href="https://github.com/Aicha-Drame/marketplace-senegal" target="_blank" class="btn">💻 GitHub</a>
+          <!-- Remplace par ton lien GitHub Pages une fois activé -->
+          <!-- <a href="https://aicha-drame.github.io/marketplace-senegal" target="_blank" class="btn">🌐 Démo live</a> -->
+        </div>
+      </div>
 
-<section class="banner">
-  <h2>Developer & Data</h2>
-  <p>Building modern and efficient digital solutions</p>
-  <a class="btn" href="CV_Aicha_Drame.pdf" target="_blank">📄 Download my CV</a>
-</section>
+      <!-- TES AUTRES PROJETS -->
+      <div class="project-card card">
+        <h3>Projet Base de données Hôtel</h3>
+        <p>Exemple de requêtes SQL et base de données.</p>
+        <a href="Projet Base de donnée Hotel V2023.pdf" target="_blank" class="btn">Voir PDF</a>
+      </div>
 
-<section class="block">
-  <h2 class="title">About Me</h2>
-  <p>
-    I am a developer specialized in application design and data management.
-    Through my education and professional experience, I have gained solid skills
-    in software development, databases, and decision-support tools.
-    This portfolio presents my academic background, professional journey, and projects.
-  </p>
-</section>
+      <div class="project-card card">
+        <h3>Site PHP - Assurances Saint Gabriel</h3>
+        <p>Code source PHP pour le site web.</p>
+        <a href="Site_ASG/index.php" target="_blank" class="btn">Voir code</a>
+      </div>
 
-<section class="block">
-  <h2 class="title">Skills</h2>
+      <div class="project-card card">
+        <h3>RGPD Documentation</h3>
+        <p>Documentation du projet de site web.</p>
+        <a href="Site_ASG/Projet RGPD Documentation site web.pdf" target="_blank" class="btn">Voir PDF</a>
+      </div>
+    </div>
+  </section>
 
-  <div class="skill">
-    <span>Programming (HTML, CSS, PHP, C#, C++, Python, R)</span>
-    <div class="bar"><div class="progress" style="width:70%"></div></div>
-  </div>
-
-  <div class="skill">
-    <span>Databases & SQL</span>
-    <div class="bar"><div class="progress" style="width:65%"></div></div>
-  </div>
-
-  <div class="skill">
-    <span>Power BI & Dashboards</span>
-    <div class="bar"><div class="progress" style="width:60%"></div></div>
-  </div>
-
-  <div class="skill">
-    <span>Big Data (MongoDB, Dataiku)</span>
-    <div class="bar"><div class="progress" style="width:50%"></div></div>
-  </div>
-
-  <div class="skill">
-    <span>Office Tools (Excel, Word, PowerPoint)</span>
-    <div class="bar"><div class="progress" style="width:80%"></div></div>
-  </div>
-</section>
-
-<section class="block">
-  <h2 class="title">Tools & Software</h2>
-  <div class="tool-grid">
-    <img src="images/vscode.png" alt="VS Code">
-    <img src="images/github.png" alt="GitHub">
-    <img src="images/mysql.png" alt="MySQL">
-    <img src="images/powerbi.png" alt="Power BI">
-    <img src="images/python.png" alt="Python">
-  </div>
-</section>
-
-<section class="block">
-  <h2 class="title">Professional Experience</h2>
-
-  <div class="exp-card">
-    <h3>Web Developer – Lannkin (Paris)</h3>
-    <span>January – February 2024</span>
-    <ul>
-      <li>HTML / CSS integration</li>
-      <li>Performance optimization</li>
-      <li>IT maintenance</li>
-    </ul>
-  </div>
-
-  <div class="exp-card">
-    <h3>Data Developer – Daikin (Nanterre)</h3>
-    <span>September 2024 – May 2025</span>
-    <ul>
-      <li>Power BI report creation</li>
-      <li>Data management in SAP</li>
-      <li>F-Gas compliance monitoring</li>
-    </ul>
-  </div>
-</section>
-
-<section class="block">
-  <h2 class="title">Education</h2>
-
-  <div class="edu-card">
-    <h3>Bachelor in Computer Science – Gustave Eiffel University</h3>
-    <span>2024 – 2025</span>
-    <p>Data mining, Big Data, Machine Learning, SQL, Python, R</p>
-  </div>
-
-  <div class="edu-card">
-    <h3>BTS SIO – Saint Gabriel High School</h3>
-    <span>2022 – 2024</span>
-    <p>Web development, databases, cybersecurity</p>
-  </div>
-</section>
-
-<footer>
-  © 2026 - Aïcha Dramé
-</footer>
-
+  <footer>
+    <p>© 2026 - Aïcha Dramé</p>
+  </footer>
 </body>
 </html>
